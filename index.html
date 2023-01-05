@@ -17,7 +17,11 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
+   
+  
+<!-- Bootstrap JavaScript file -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-lBq3A4gBC5YGjWO5z5v5QhfjK7VQ2W65X8Cv39xraCNuO7VJnWZbF7vzAO5FbV1Q" crossorigin="anonymous"></script>
+
   <script src="./source/local-storage-wrapper.js">
     alert("This alert box was called with the onload event");
   </script>
@@ -30,27 +34,26 @@
 
 <body>
 
-  <!-- nav bar  -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-warning">
-    <div class="container-fluid">
-    <a class="navbar-brand" href="#">Cost Manager</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
+<!-- nav bar  -->
+<nav class="navbar navbar-expand-lg navbar-light bg-warning">
+  <div class="container-fluid">
+  <a class="navbar-brand" href="#">Cost Manager</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
 
-        <li class="nav-item">
-          <a class="nav-link" href="history.html">History</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About us</a>
-           </li>
-          </ul>
-      </div>
-    </div>
-  </nav>
+      <li class="nav-item">
+        <a class="nav-link" href="history.html">History</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
 
   <div class="all-site">
@@ -60,7 +63,7 @@
 
     <form>
 
-      <label>Name item:</label>
+      <label>Item name:</label>
       <input type="text" id="fname" class="form-control" placeholder="Enter the description of item" required>
       <label>Category:</label>
       <input list="categories" name="browser" id="browser" class="form-control" placeholder="Enter category of item" required>
