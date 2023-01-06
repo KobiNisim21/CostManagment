@@ -8,10 +8,6 @@
   <title>Home page</title>
   <link rel="icon" href="./photos/title-icon.png" type="image/x-icon">
 
-  <!-- sweetaletr -->
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-
 
   <!-- Link for bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -59,9 +55,7 @@
 
     <h1>Enter a new cost 💰</h1>
 
-
-    <form>
-
+    <form id = "myForm">
       <label>Item name:</label>
       <input type="text" id="fname" class="form-control" placeholder="Enter the description of item" required>
       <label>Category:</label>
@@ -79,8 +73,9 @@
       <input type="date" id="Date" class="form-control" placeholder="Choose the date" required>
       <label>Price:</label>
       <input type="number" id="Price" class="form-control" placeholder="Enter the price of item" required><br>
-      <button class="btn btn-warning" onclick="init();openPopup()" type="submit" value="Submit">Add to list</button>
-      <div class="popup" id="popup">
+      <button class="btn btn-warning" onclick="init();" type="submit" value="Submit">Add to list</button> 
+      <!-- Creating a Popup that runs as soon as the form is submitted -->
+      <div class="popup" id="popup"> 
         <img src="./public/photos/404-tick.png" />
         <h2>Thank You!</h2>
         <p>Your details has been successfully submitted. Thanks!</p>
@@ -90,15 +85,12 @@
   </div>
 
   <script>
-    let popup = document.getElementById("popup");
-    function openPopup() {
-      popup.classList.add("open-popup");
-    }
-    function closePopup() {
-      popup.classList.remove("open-popup");
-    }
-  </script>
+      var form = document.getElementById("myForm"); //Canceling the reload of the page so that the popup appears after filling out the form and does not disappear on refresh.
+      function handleForm(event) { 
+        event.preventDefault();
+      } 
+    form.addEventListener('submit', handleForm);  
+    </script>
 
 </body>
-
 </html>

@@ -20,4 +20,21 @@ function createItem(name, sum, category, date, i) {
   storage.addItem(name, sum, category, date, i);
   i++;
   localStorage.setItem("i", i);
+  openPopup();
+  clearForm(name, sum, category, date);
+}
+
+function openPopup() {
+  let popup = document.getElementById("popup");
+  console.log("hello");
+  popup.classList.add("open-popup");
+}
+
+function closePopup() {
+  let popup = document.getElementById("popup");
+  popup.classList.remove("open-popup");
+  document.getElementById("fname").value = "";
+  document.getElementById("Price").value = "";
+  document.getElementById("browser").value = "";
+  document.getElementById("Date").value = "";
 }
