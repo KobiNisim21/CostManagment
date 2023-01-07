@@ -32,7 +32,7 @@ function openPopup() {
 
 function closePopup() {
   let popup = document.getElementById("popup");
-  popup.classList.remove("open-popup");
+  popup.classList.remove("open-popup"); //Clearing the form after closing the Popup window
   document.getElementById("fname").value = "";
   document.getElementById("Price").value = "";
   document.getElementById("browser").value = "";
