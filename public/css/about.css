@@ -34,7 +34,7 @@ h1 {
 @media screen and (max-width: 768px) {
   .img_container {
     display: list-item;
-    padding: 10%;
+    padding: 5%;
     margin-top: -50px;
   }
 }
