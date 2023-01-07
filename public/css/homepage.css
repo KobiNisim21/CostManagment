@@ -31,6 +31,13 @@ body {
   -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .form-control {
+    width: 80%;
+  }
+}
+
 .form-control:focus {
   border-color: #66afe9;
   outline: 0;
