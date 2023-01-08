@@ -100,3 +100,14 @@ input[type="month"].input-lg {
   padding: 10px;
   box-sizing: border-box;
 }
+
+.btn {
+  padding: 10px 60px;
+  background: rgb(218, 153, 0);
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 30px;
+}
