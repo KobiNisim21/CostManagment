@@ -59,5 +59,5 @@ function showByYear() {
 
   table += `</tbody></table>`;
   document.getElementById("result").innerHTML = table;
-  document.getElementById("total").innerHTML = `The total is: ${total}`;
+  document.getElementById("total").innerHTML = `The total amount is: ${total}`;
 }
