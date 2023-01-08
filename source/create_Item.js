@@ -26,7 +26,6 @@ function createItem(name, sum, category, date, i) {
 
 function openPopup() {
   let popup = document.getElementById("popup");
-  console.log("hello");
   popup.classList.add("open-popup");
 }
 

@@ -42,17 +42,17 @@
       <div class="search-month">
         <h2>Search by month and year:</h2>
         <input type="month" id="date" class="form-control" name="start" min="1990-03" value="2023-01" />
-        <button class="btn btn-secondary btn" onclick="showByMonth()">Show</button>
+        <button class="btn btn-secondary" onclick="showByMonth()">Show</button>
       </div>
 
       <div class="search-year">
         <h2>Search by year:</h2>
         <input type="number" id="year" class="form-control" min="1900" max="2023" step="1" value="2023" required />
-        <button class="btn btn-secondary btn" onclick="showByYear()">Show</button>
+        <button class="btn btn-secondary" onclick="showByYear();sumBox()">Show</button>
       </div>
     </div>
 
-    <h2 id="total"></h2>
+    <h2 id="total" class="sum-box"></h2>
 
     <div id="result"></div>
   </body>
