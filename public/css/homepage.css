@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "SegoeUItalic";
+  src: url("SegoeUI-SemilightItalic_gdi.eot");
+  src: url("SegoeUI-SemilightItalic_gdi.eot?#iefix") format("embedded-opentype"), url("SegoeUI-SemilightItalic_gdi.woff") format("woff"), url("SegoeUI-SemilightItalic_gdi.ttf") format("truetype"), url("SegoeUI-SemilightItalic_gdi.svg#SegoeUI-SemilightItalic") format("svg");
+  font-weight: 350;
+  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+000D-FFFD;
+}
+
 body {
   background-color: #f0eccf;
 }
@@ -8,7 +18,7 @@ body {
   font-size: 1.5rem;
   text-decoration: none;
   font-weight: bold;
-  font-family: "montserrat", "Segoe UI", sans-serif;
+  font-family: "SegoeUItalic", "montserrat", "Segoe UI", sans-serif;
 }
 
 .form-control {
