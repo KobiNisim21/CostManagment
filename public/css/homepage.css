@@ -117,7 +117,7 @@ input[type="month"].input-lg {
   border: 0;
   outline: none;
   cursor: pointer;
-  font-size: 22px;
-  font-weight: 500;
+  font-size: 28px;
+  font-weight: bold;
   border-radius: 30px;
 }

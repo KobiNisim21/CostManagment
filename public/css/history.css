@@ -111,12 +111,12 @@ input[type="month"].input-lg {
 }
 
 .btn {
-  padding: 10px 60px;
+  padding: 5px 45px;
   background: rgb(135, 135, 135);
   border: 0;
   outline: none;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 500;
   border-radius: 30px;
 }
@@ -130,5 +130,6 @@ input[type="month"].input-lg {
   cursor: pointer;
   font-size: 22px;
   font-weight: 500;
+  font-family: "SegoeUItalic", "montserrat", "Segoe UI", sans-serif;
   border-radius: 30px;
 }
