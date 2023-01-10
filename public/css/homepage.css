@@ -48,6 +48,10 @@ body {
   }
 }
 
+h1 {
+  font-weight: bold;
+}
+
 .form-control:focus {
   border-color: #66afe9;
   outline: 0;
@@ -118,6 +122,6 @@ input[type="month"].input-lg {
   outline: none;
   cursor: pointer;
   font-size: 28px;
-  font-weight: bold;
+  font-weight: lighter;
   border-radius: 30px;
 }
