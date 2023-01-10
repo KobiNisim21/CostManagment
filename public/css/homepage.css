@@ -1,7 +1,7 @@
 @font-face {
   font-family: "SegoeUItalic";
-  src: url("./SegoeUI-SemilightItalic_gdi.eot");
-  src: url("./SegoeUI-SemilightItalic_gdi.eot?#iefix") format("embedded-opentype"), url("./SegoeUI-SemilightItalic_gdi.woff") format("woff"), url("./SegoeUI-SemilightItalic_gdi.ttf") format("truetype"), url("./SegoeUI-SemilightItalic_gdi.svg#SegoeUI-SemilightItalic") format("svg");
+  src: url("./SegoeUI-SemiboldItalic.eot");
+  src: url("./SegoeUI-SemiboldItalic.eot?#iefix") format("embedded-opentype"), url("./SegoeUI-SemiboldItalic.woff") format("woff"), url("./SegoeUI-SemiboldItalic.woff2") format("woff2"), url("./SegoeUI-SemiboldItalic.ttf") format("truetype"), url("./SegoeUI-SemiboldItalic.svg") format("svg");
   font-weight: 350;
   font-style: italic;
   font-stretch: normal;
