@@ -1,17 +1,16 @@
-function showByMonth() {
+async function showByMonth() {
   let date = document.getElementById("date").value;
   let year = date.split("-")[0];
   let month = date.split("-")[1];
   let total = 0;
   console.log(year, month);
 
-  let keys = Object.keys(localStorage);
+  let keys = await Object.keys(localStorage);
   var table = '<table class="table table-dark"><thead><tr><th scope="col">Date</th><th scope="col">Category</th><th scope="col">Description</th><th scope="col">Sum</th></tr></thead><tbody>';
-
   // Loop through the keys and get the values
   for (var i = 0; i < keys.length; i++) {
     var key = keys[i];
-    var value = localStorage.getItem(key);
+    var value = await localStorage.getItem(key);
     var new_value = JSON.parse(value);
     const myOB = JSON.parse(value);
     table += "<tr>";
@@ -29,20 +28,19 @@ function showByMonth() {
   document.getElementById("total").innerHTML = `The total amount is: ${total}`;
 }
 
-function showByYear() {
+async function showByYear() {
   let date = document.getElementById("year").value;
   let year = date;
   let total = 0;
   console.log(year);
 
-  let keys = Object.keys(localStorage);
+  let keys = await Object.keys(localStorage);
 
   var table = '<table class="table table-dark"><thead><tr><th scope="col">Date</th><th scope="col">Category</th><th scope="col">Description</th><th scope="col">Sum</th></tr></thead><tbody>';
-
   // Loop through the keys and get the values
   for (var i = 0; i < keys.length; i++) {
     var key = keys[i];
-    var value = localStorage.getItem(key);
+    var value = await localStorage.getItem(key);
     var new_value = JSON.parse(value);
     const myOB = JSON.parse(value);
 

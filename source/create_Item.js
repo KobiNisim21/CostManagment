@@ -15,11 +15,11 @@ function init() {
   }
 }
 
-function createItem(name, sum, category, date, i) {
+async function createItem(name, sum, category, date, i) {
   const storage = new LocalStorageWrapper();
-  storage.addItem(name, sum, category, date, i);
+  await storage.addItem(name, sum, category, date, i);
   i++;
-  localStorage.setItem("i", i);
+  await localStorage.setItem("i", i);
   openPopup();
   clearForm(name, sum, category, date);
 }
