@@ -8,6 +8,11 @@
   unicode-range: U+000D-FFFD;
 }
 
+span {
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
 body {
   background-color: #f0eccf;
   font-family: verdana;
@@ -17,10 +22,6 @@ body {
 h1 {
   margin-bottom: -10px;
   font-family: "SegoeUItalic", "montserrat", "Segoe UI", sans-serif;
-}
-
-span {
-  font-weight: lighter;
 }
 
 .contain {
@@ -33,7 +34,7 @@ span {
 * {
   margin: 0;
   padding: 0;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-decoration: none;
   font-weight: bold;
   font-style: italic;
@@ -58,7 +59,9 @@ span {
   cursor: pointer;
   width: 340px;
   height: 480px;
+  line-height: 30px;
 }
+
 .front,
 .back {
   width: 100%;
