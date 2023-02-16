@@ -1,3 +1,8 @@
+<!--
+Netanel Yomtovian 207498700
+Itay Yaakov 206777989
+Kobi Nissim 313202996 -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,9 +28,7 @@
   <!-- Bootstrap JavaScript file -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-lBq3A4gBC5YGjWO5z5v5QhfjK7VQ2W65X8Cv39xraCNuO7VJnWZbF7vzAO5FbV1Q" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  <script src="./source/local-storage-wrapper.js">
-    alert("This alert box was called with the onload event");
-  </script>
+  <script src="./source/localstoragewrapper.js"></script>
   <script src="./source/create_Item.js"></script>
   <link rel="stylesheet" href="./public/css/homepage.css">
   <link rel="stylesheet" href="./public/css/popup.css">
@@ -78,7 +81,7 @@
       <input type="date" id="Date" class="form-control" placeholder="Choose the date" required>
       <label>Price:</label>
       <input type="number" id="Price" class="form-control" placeholder="Enter the price of item" required><br>
-      <button class="btn btn-warning" onclick="init();" type="submit" value="Submit">ADD TO LIST</button> 
+      <button id = "submit" class="btn btn-warning" onclick="init();" type="submit" value="Submit">ADD TO LIST</button> 
       <!-- Creating a Popup that runs as soon as the form is submitted -->
       <div class="popup" id="popup"> 
         <img src="./public/photos/404-tick.png" />
@@ -90,8 +93,10 @@
   </div>
 
   <script>
-      var form = document.getElementById("myForm"); //Canceling the reload of the page so that the popup appears after filling out the form and does not disappear on refresh.
-      function handleForm(event) { 
+    // Canceling the reload of the page so that the popup appears 
+    // after filling out the form and does not disappear on refresh.
+    var form = document.getElementById("myForm"); 
+    function handleForm(event) { 
         event.preventDefault();
       } 
     form.addEventListener('submit', handleForm);  
